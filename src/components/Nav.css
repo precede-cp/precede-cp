@@ -1,8 +1,6 @@
 .nav-list {
   list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: none;
 }
 
 a {
@@ -39,4 +37,12 @@ a:after {
 a:hover:after {
   transition: transform 0.5s cubic-bezier(0.28, 0, 0.18, 1) 0.2s;
   transform: translateX(-50%) scaleX(1);
+}
+
+@media only screen and (min-width: 720px) {
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
