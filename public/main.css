@@ -233,6 +233,7 @@ ul {
   .nav {
     height: 120px;
   }
+
   .grid-title {
     font-size: 4vw;
   }
@@ -316,6 +317,7 @@ ul {
 .nav-list {
   list-style: none;
   display: none;
+  font-size: 0.8em;
 }
 
 .nav-item a {
@@ -359,5 +361,11 @@ a:hover:after {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+@media only screen and (min-width: 860px) {
+  .nav-list {
+    font-size: 1em;
   }
 }
